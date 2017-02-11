@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class MainPage
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -523,7 +523,7 @@ Partial Class Form1
         Me.Basketball_SmHmFav_LoTot.Text = "Small Home Fav/ Low Total"
         Me.Basketball_SmHmFav_LoTot.UseVisualStyleBackColor = True
         '
-        'Form1
+        'MainPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -531,7 +531,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.LblSportSelect)
         Me.Controls.Add(Me.SportSelectBox)
-        Me.Name = "Form1"
+        Me.Name = "MainPage"
         Me.Text = "Default Lines"
         Me.TabControl1.ResumeLayout(False)
         Me.SoccerTabPage.ResumeLayout(False)
