@@ -101,6 +101,13 @@
     <Compile Include="soccer_lines.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TennisLinesCalcs.vb" />
+    <Compile Include="Tennis_Lines_Window.Designer.vb">
+      <DependentUpon>Tennis_Lines_Window.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tennis_Lines_Window.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.resx">
@@ -114,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="soccer_lines.resx">
       <DependentUpon>soccer_lines.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tennis_Lines_Window.resx">
+      <DependentUpon>Tennis_Lines_Window.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

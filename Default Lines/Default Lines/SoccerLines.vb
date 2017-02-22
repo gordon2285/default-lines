@@ -1,14 +1,8 @@
-﻿Public Class SoccerLines
+﻿Public Class SoccerLinesCalcs
 
-    Public Shared Function SoccerHandicap() As Decimal
+    Public Shared Function SoccerHandicap(ByVal a As Integer, ByVal b As Integer) As Decimal
         Dim rnd As New Random()
-        Dim HandicapValue As Decimal
-        Dim a As Integer = 4
-        Dim b As Integer = 9
-
-        HandicapValue = (rnd.Next(a, b))
-        HandicapValue = HandicapValue / 4
-        Return HandicapValue
+        Return ((rnd.Next(a, b)) / 4)
     End Function
 
     Public Shared Function SoccerTotal(ByVal c As Integer, ByVal d As Integer) As Decimal
