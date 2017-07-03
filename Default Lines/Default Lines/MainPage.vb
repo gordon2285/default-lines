@@ -1,5 +1,5 @@
 ﻿Public Class MainPage
-   
+
     Private Sub Button1_MouseClick(sender As Object, e As MouseEventArgs) Handles Soccer_Standard.MouseClick
         Dim SoccerLinesWindow As soccer_lines
         SoccerLinesWindow = New soccer_lines()
@@ -250,5 +250,85 @@
 
         Tennis_Lines.ShowDialog()
 
+    End Sub
+
+    Private Sub Basketball_SmHmFav_LoTot_Click(sender As Object, e As EventArgs) Handles Basketball_SmHmFav_LoTot.Click
+        Dim Basketball_Lines As Basketball_Lines_Window
+        Basketball_Lines = New Basketball_Lines_Window()
+
+        Basketball_Lines.BasketballHandicapBox.Text = BasketballLinesCalcs.BasketballHandicap(0, 20)
+        Basketball_Lines.BasketballTotalBox.Text = BasketballLinesCalcs.BasketballTotal(220, 280)
+
+        Basketball_Lines.ShowDialog()
+    End Sub
+
+    Private Sub Basketball_SmAwFav_LoTot_Click(sender As Object, e As EventArgs) Handles Basketball_SmAwFav_LoTot.Click
+        Dim Basketball_Lines As Basketball_Lines_Window
+        Basketball_Lines = New Basketball_Lines_Window()
+
+        Basketball_Lines.BasketballHandicapBox.Text = BasketballLinesCalcs.BasketballHandicap(-20, 0)
+        Basketball_Lines.BasketballTotalBox.Text = BasketballLinesCalcs.BasketballTotal(220, 280)
+
+        Basketball_Lines.ShowDialog()
+    End Sub
+
+    Private Sub Basketball_LrgHmFav_LoTot_Click(sender As Object, e As EventArgs) Handles Basketball_LrgHmFav_LoTot.Click
+        Dim Basketball_Lines As Basketball_Lines_Window
+        Basketball_Lines = New Basketball_Lines_Window()
+
+        Basketball_Lines.BasketballHandicapBox.Text = BasketballLinesCalcs.BasketballHandicap(30, 80)
+        Basketball_Lines.BasketballTotalBox.Text = BasketballLinesCalcs.BasketballTotal(220, 280)
+
+        Basketball_Lines.ShowDialog()
+    End Sub
+
+    Private Sub Basketball_LrgAwFav_LoTot_Click(sender As Object, e As EventArgs) Handles Basketball_LrgAwFav_LoTot.Click
+        Dim Basketball_Lines As Basketball_Lines_Window
+        Basketball_Lines = New Basketball_Lines_Window()
+
+        Basketball_Lines.BasketballHandicapBox.Text = BasketballLinesCalcs.BasketballHandicap(-80, -30)
+        Basketball_Lines.BasketballTotalBox.Text = BasketballLinesCalcs.BasketballTotal(220, 280)
+
+        Basketball_Lines.ShowDialog()
+    End Sub
+
+    Private Sub Basketball_SmHmFav_HiTot_Click(sender As Object, e As EventArgs) Handles Basketball_SmHmFav_HiTot.Click
+        Dim Basketball_Lines As Basketball_Lines_Window
+        Basketball_Lines = New Basketball_Lines_Window()
+
+        Basketball_Lines.BasketballHandicapBox.Text = BasketballLinesCalcs.BasketballHandicap(0, 20)
+        Basketball_Lines.BasketballTotalBox.Text = BasketballLinesCalcs.BasketballTotal(350, 430)
+
+        Basketball_Lines.ShowDialog()
+    End Sub
+
+    Private Sub Basketball_SmAwFav_HiTot_Click(sender As Object, e As EventArgs) Handles Basketball_SmAwFav_HiTot.Click
+        Dim Basketball_Lines As Basketball_Lines_Window
+        Basketball_Lines = New Basketball_Lines_Window()
+
+        Basketball_Lines.BasketballHandicapBox.Text = BasketballLinesCalcs.BasketballHandicap(-20, 0)
+        Basketball_Lines.BasketballTotalBox.Text = BasketballLinesCalcs.BasketballTotal(350, 430)
+
+        Basketball_Lines.ShowDialog()
+    End Sub
+
+    Private Sub Basketball_LrgHmFav_HiTot_Click(sender As Object, e As EventArgs) Handles Basketball_LrgHmFav_HiTot.Click
+        Dim Basketball_Lines As Basketball_Lines_Window
+        Basketball_Lines = New Basketball_Lines_Window()
+
+        Basketball_Lines.BasketballHandicapBox.Text = BasketballLinesCalcs.BasketballHandicap(30, 100)
+        Basketball_Lines.BasketballTotalBox.Text = BasketballLinesCalcs.BasketballTotal(350, 430)
+
+        Basketball_Lines.ShowDialog()
+    End Sub
+
+    Private Sub Basetball_LrgAwFav_HiTot_Click(sender As Object, e As EventArgs) Handles Basetball_LrgAwFav_HiTot.Click
+        Dim Basketball_Lines As Basketball_Lines_Window
+        Basketball_Lines = New Basketball_Lines_Window()
+
+        Basketball_Lines.BasketballHandicapBox.Text = BasketballLinesCalcs.BasketballHandicap(-100, -30)
+        Basketball_Lines.BasketballTotalBox.Text = BasketballLinesCalcs.BasketballTotal(350, 430)
+
+        Basketball_Lines.ShowDialog()
     End Sub
 End Class
