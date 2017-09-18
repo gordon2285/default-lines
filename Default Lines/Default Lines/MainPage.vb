@@ -331,4 +331,19 @@
 
         Basketball_Lines.ShowDialog()
     End Sub
+
+    Private Sub SportSelectBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles SportSelectBox.SelectedIndexChanged
+
+        If (SportSelectBox.SelectedItem = "Soccer") Then
+            Soccer_Panel.BringToFront()
+            Soccer_Panel.Visible = True
+        ElseIf (SportSelectBox.SelectedItem = "Tennis") Then
+            Tennis_Panel.BringToFront()
+            Tennis_Panel.Visible = True
+        ElseIf (SportSelectBox.SelectedItem = "Basketball") Then
+            Basketball_Panel.BringToFront()
+            Basketball_Panel.Visible = True
+        End If
+
+    End Sub
 End Class
