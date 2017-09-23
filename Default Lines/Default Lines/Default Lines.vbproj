@@ -49,6 +49,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DocumentationFile>Default Lines.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -100,6 +101,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmericanFootballCalcs.vb" />
+    <Compile Include="AmericanFootball_Lines_Window.Designer.vb">
+      <DependentUpon>AmericanFootball_Lines_Window.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AmericanFootball_Lines_Window.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="BasketballLinesCalcs.vb" />
     <Compile Include="Basketball_Lines_Window.Designer.vb">
       <DependentUpon>Basketball_Lines_Window.vb</DependentUpon>

@@ -68,17 +68,27 @@ Partial Class MainPage
         Me.Tennis_WGrass_P1 = New System.Windows.Forms.Button()
         Me.Tennis_MClay_P2 = New System.Windows.Forms.Button()
         Me.MainPageBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.American_Football_Panel = New System.Windows.Forms.Panel()
+        Me.AmF_LrgAwFav_RegTot = New System.Windows.Forms.Button()
+        Me.AmF_HmFav_RegTot = New System.Windows.Forms.Button()
+        Me.AmF_AwFav_RegTot = New System.Windows.Forms.Button()
+        Me.AmF_LrgHmFav_RegTot = New System.Windows.Forms.Button()
+        Me.AmF_AwFav_LrgTotal = New System.Windows.Forms.Button()
+        Me.AmF_HmFav_LrgTot = New System.Windows.Forms.Button()
+        Me.AmF_LrgAwFav_LrgTot = New System.Windows.Forms.Button()
+        Me.AmF_LrgHmFav_LrgTot = New System.Windows.Forms.Button()
         Me.Soccer_Panel.SuspendLayout()
         Me.Basketball_Panel.SuspendLayout()
         Me.Tennis_Panel.SuspendLayout()
         CType(Me.MainPageBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.American_Football_Panel.SuspendLayout()
         Me.SuspendLayout()
         '
         'SportSelectBox
         '
         Me.SportSelectBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.SportSelectBox.FormattingEnabled = True
-        Me.SportSelectBox.Items.AddRange(New Object() {"Soccer", "Tennis", "Basketball"})
+        Me.SportSelectBox.Items.AddRange(New Object() {"American Football", "Aussie Rules", "Basketball", "Soccer", "Tennis"})
         Me.SportSelectBox.Location = New System.Drawing.Point(216, 45)
         Me.SportSelectBox.Name = "SportSelectBox"
         Me.SportSelectBox.Size = New System.Drawing.Size(121, 21)
@@ -212,6 +222,8 @@ Partial Class MainPage
         '
         'Soccer_Panel
         '
+        Me.Soccer_Panel.BackColor = System.Drawing.SystemColors.ActiveBorder
+        Me.Soccer_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Soccer_Panel.Controls.Add(Me.Soccer_Standard)
         Me.Soccer_Panel.Controls.Add(Me.Soccer_HFav_NTot)
         Me.Soccer_Panel.Controls.Add(Me.Soccer_AFav_NTot)
@@ -225,6 +237,7 @@ Partial Class MainPage
         '
         'Basketball_Panel
         '
+        Me.Basketball_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Basketball_Panel.Controls.Add(Me.Basketball_LrgHmFav_HiTot)
         Me.Basketball_Panel.Controls.Add(Me.Basetball_LrgAwFav_HiTot)
         Me.Basketball_Panel.Controls.Add(Me.Basketball_SmHmFav_HiTot)
@@ -241,6 +254,7 @@ Partial Class MainPage
         '
         'Tennis_Panel
         '
+        Me.Tennis_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.Tennis_Panel.Controls.Add(Me.LblTennisWomen)
         Me.Tennis_Panel.Controls.Add(Me.Tennis_MGrass_P1)
         Me.Tennis_Panel.Controls.Add(Me.LblTennisWClay)
@@ -511,16 +525,107 @@ Partial Class MainPage
         '
         Me.MainPageBindingSource.DataSource = GetType(Default_Lines.MainPage)
         '
+        'American_Football_Panel
+        '
+        Me.American_Football_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.American_Football_Panel.Controls.Add(Me.AmF_LrgHmFav_LrgTot)
+        Me.American_Football_Panel.Controls.Add(Me.AmF_LrgAwFav_LrgTot)
+        Me.American_Football_Panel.Controls.Add(Me.AmF_HmFav_LrgTot)
+        Me.American_Football_Panel.Controls.Add(Me.AmF_AwFav_LrgTotal)
+        Me.American_Football_Panel.Controls.Add(Me.AmF_LrgHmFav_RegTot)
+        Me.American_Football_Panel.Controls.Add(Me.AmF_LrgAwFav_RegTot)
+        Me.American_Football_Panel.Controls.Add(Me.AmF_HmFav_RegTot)
+        Me.American_Football_Panel.Controls.Add(Me.AmF_AwFav_RegTot)
+        Me.American_Football_Panel.Location = New System.Drawing.Point(36, 86)
+        Me.American_Football_Panel.Name = "American_Football_Panel"
+        Me.American_Football_Panel.Size = New System.Drawing.Size(450, 300)
+        Me.American_Football_Panel.TabIndex = 5
+        Me.American_Football_Panel.Visible = False
+        '
+        'AmF_LrgAwFav_RegTot
+        '
+        Me.AmF_LrgAwFav_RegTot.Location = New System.Drawing.Point(68, 104)
+        Me.AmF_LrgAwFav_RegTot.Name = "AmF_LrgAwFav_RegTot"
+        Me.AmF_LrgAwFav_RegTot.Size = New System.Drawing.Size(104, 47)
+        Me.AmF_LrgAwFav_RegTot.TabIndex = 2
+        Me.AmF_LrgAwFav_RegTot.Text = "Large Away Fav / Regular Total"
+        Me.AmF_LrgAwFav_RegTot.UseVisualStyleBackColor = True
+        '
+        'AmF_HmFav_RegTot
+        '
+        Me.AmF_HmFav_RegTot.Location = New System.Drawing.Point(236, 29)
+        Me.AmF_HmFav_RegTot.Name = "AmF_HmFav_RegTot"
+        Me.AmF_HmFav_RegTot.Size = New System.Drawing.Size(107, 45)
+        Me.AmF_HmFav_RegTot.TabIndex = 1
+        Me.AmF_HmFav_RegTot.Text = "Home Fav / Regular Total"
+        Me.AmF_HmFav_RegTot.UseVisualStyleBackColor = True
+        '
+        'AmF_AwFav_RegTot
+        '
+        Me.AmF_AwFav_RegTot.Location = New System.Drawing.Point(68, 30)
+        Me.AmF_AwFav_RegTot.Name = "AmF_AwFav_RegTot"
+        Me.AmF_AwFav_RegTot.Size = New System.Drawing.Size(104, 44)
+        Me.AmF_AwFav_RegTot.TabIndex = 0
+        Me.AmF_AwFav_RegTot.Text = "Away Fav / Normal Total"
+        Me.AmF_AwFav_RegTot.UseVisualStyleBackColor = True
+        '
+        'AmF_LrgHmFav_RegTot
+        '
+        Me.AmF_LrgHmFav_RegTot.Location = New System.Drawing.Point(236, 100)
+        Me.AmF_LrgHmFav_RegTot.Name = "AmF_LrgHmFav_RegTot"
+        Me.AmF_LrgHmFav_RegTot.Size = New System.Drawing.Size(107, 51)
+        Me.AmF_LrgHmFav_RegTot.TabIndex = 3
+        Me.AmF_LrgHmFav_RegTot.Text = "Large Home Fav / Regular Total"
+        Me.AmF_LrgHmFav_RegTot.UseVisualStyleBackColor = True
+        '
+        'AmF_AwFav_LrgTotal
+        '
+        Me.AmF_AwFav_LrgTotal.Location = New System.Drawing.Point(68, 190)
+        Me.AmF_AwFav_LrgTotal.Name = "AmF_AwFav_LrgTotal"
+        Me.AmF_AwFav_LrgTotal.Size = New System.Drawing.Size(104, 39)
+        Me.AmF_AwFav_LrgTotal.TabIndex = 4
+        Me.AmF_AwFav_LrgTotal.Text = "Away Fav / Large Total"
+        Me.AmF_AwFav_LrgTotal.UseVisualStyleBackColor = True
+        '
+        'AmF_HmFav_LrgTot
+        '
+        Me.AmF_HmFav_LrgTot.Location = New System.Drawing.Point(236, 186)
+        Me.AmF_HmFav_LrgTot.Name = "AmF_HmFav_LrgTot"
+        Me.AmF_HmFav_LrgTot.Size = New System.Drawing.Size(107, 43)
+        Me.AmF_HmFav_LrgTot.TabIndex = 5
+        Me.AmF_HmFav_LrgTot.Text = "Home Fav / Large Total"
+        Me.AmF_HmFav_LrgTot.UseVisualStyleBackColor = True
+        '
+        'AmF_LrgAwFav_LrgTot
+        '
+        Me.AmF_LrgAwFav_LrgTot.Location = New System.Drawing.Point(68, 254)
+        Me.AmF_LrgAwFav_LrgTot.Name = "AmF_LrgAwFav_LrgTot"
+        Me.AmF_LrgAwFav_LrgTot.Size = New System.Drawing.Size(104, 39)
+        Me.AmF_LrgAwFav_LrgTot.TabIndex = 6
+        Me.AmF_LrgAwFav_LrgTot.Text = "Large Away Fav / Large Total"
+        Me.AmF_LrgAwFav_LrgTot.UseVisualStyleBackColor = True
+        '
+        'AmF_LrgHmFav_LrgTot
+        '
+        Me.AmF_LrgHmFav_LrgTot.Location = New System.Drawing.Point(236, 254)
+        Me.AmF_LrgHmFav_LrgTot.Name = "AmF_LrgHmFav_LrgTot"
+        Me.AmF_LrgHmFav_LrgTot.Size = New System.Drawing.Size(107, 39)
+        Me.AmF_LrgHmFav_LrgTot.TabIndex = 7
+        Me.AmF_LrgHmFav_LrgTot.Text = "Large Home Fav / Large Total"
+        Me.AmF_LrgHmFav_LrgTot.UseVisualStyleBackColor = True
+        '
         'MainPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveBorder
         Me.ClientSize = New System.Drawing.Size(542, 461)
         Me.Controls.Add(Me.LblSportSelect)
         Me.Controls.Add(Me.SportSelectBox)
-        Me.Controls.Add(Me.Soccer_Panel)
         Me.Controls.Add(Me.Basketball_Panel)
+        Me.Controls.Add(Me.American_Football_Panel)
         Me.Controls.Add(Me.Tennis_Panel)
+        Me.Controls.Add(Me.Soccer_Panel)
         Me.Name = "MainPage"
         Me.Text = "Default Lines"
         Me.Soccer_Panel.ResumeLayout(False)
@@ -528,6 +633,7 @@ Partial Class MainPage
         Me.Tennis_Panel.ResumeLayout(False)
         Me.Tennis_Panel.PerformLayout()
         CType(Me.MainPageBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.American_Football_Panel.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -578,4 +684,13 @@ Partial Class MainPage
     Friend WithEvents Tennis_WGrass_P1 As Button
     Friend WithEvents Tennis_MClay_P2 As Button
     Friend WithEvents MainPageBindingSource As BindingSource
+    Friend WithEvents American_Football_Panel As Panel
+    Friend WithEvents AmF_AwFav_RegTot As Button
+    Friend WithEvents AmF_LrgAwFav_RegTot As Button
+    Friend WithEvents AmF_HmFav_RegTot As Button
+    Friend WithEvents AmF_LrgHmFav_RegTot As Button
+    Friend WithEvents AmF_LrgHmFav_LrgTot As Button
+    Friend WithEvents AmF_LrgAwFav_LrgTot As Button
+    Friend WithEvents AmF_HmFav_LrgTot As Button
+    Friend WithEvents AmF_AwFav_LrgTotal As Button
 End Class
