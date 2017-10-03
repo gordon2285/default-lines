@@ -23,14 +23,14 @@
         </ComboBox>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="167.727,60.188,0,0" TextWrapping="Wrap" Text="Select a sport:" VerticalAlignment="Top" Width="120" TextAlignment="Right"/>
         <Canvas x:Name="Basketball_PanelWPF" Margin="120.5,105,242,219" Width="400" Height="400">
-            <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Canvas.Left="69.862" Canvas.Top="47.732"/>
-            <Button Content="Button" Canvas.Left="227.814" Canvas.Top="47.732" Width="75"/>
-            <Button Content="Button" Canvas.Left="69.862" Canvas.Top="99.316" Width="75"/>
-            <Button Content="Button" Canvas.Left="227.814" Canvas.Top="99.316" Width="75"/>
-            <Button Content="Button" Canvas.Left="69.862" Canvas.Top="161.594" Width="75"/>
-            <Button Content="Button" Canvas.Left="227.814" Canvas.Top="161.594" Width="75"/>
-            <Button Content="Button" Canvas.Left="69.862" Canvas.Top="227.43" Width="75"/>
-            <Button Content="Button" Canvas.Left="227.814" Canvas.Top="227.43" Width="75"/>
+            <Button x:Name="Basketball_LrgAwFav_LrgTot" Content="Large Away Fav / High Total" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Canvas.Left="69.862" Canvas.Top="47.732"/>
+            <Button x:Name="Basketball_LrgHmFav_LrgTot" Content="Large Home Fav / High Total" Canvas.Left="227.814" Canvas.Top="47.732" Width="75"/>
+            <Button x:Name="Basketball_LrgAwFav_LowTot" Content="Large Away Fav / Low Total" Canvas.Left="69.862" Canvas.Top="99.316" Width="75"/>
+            <Button x:Name="Basketball_LrgHmFav_LowTot" Content="Large Home Fav / Low Total" Canvas.Left="227.814" Canvas.Top="99.316" Width="75"/>
+            <Button x:Name="Basketball_SmAwFav_LrgTot" Content="Small Away Fav / High Total" Canvas.Left="69.862" Canvas.Top="161.594" Width="75"/>
+            <Button x:Name="Basketball_SmHmFav_LrgTot" Content="Small Home Fav / High Total" Canvas.Left="227.814" Canvas.Top="161.594" Width="75"/>
+            <Button x:Name="Basketball_SmAwFav_LowTot" Content="Small Away Fav / Low Total" Canvas.Left="69.862" Canvas.Top="227.43" Width="75"/>
+            <Button x:Name="Basketball_SmHmFav_LowTot" Content="Small Home Fav / Low Total" Canvas.Left="227.814" Canvas.Top="227.43" Width="75"/>
         </Canvas>
 
     </Grid>
