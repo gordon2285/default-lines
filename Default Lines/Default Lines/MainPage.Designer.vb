@@ -69,14 +69,14 @@ Partial Class MainPage
         Me.Tennis_MClay_P2 = New System.Windows.Forms.Button()
         Me.MainPageBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.American_Football_Panel = New System.Windows.Forms.Panel()
+        Me.AmF_LrgHmFav_LrgTot = New System.Windows.Forms.Button()
+        Me.AmF_LrgAwFav_LrgTot = New System.Windows.Forms.Button()
+        Me.AmF_HmFav_LrgTot = New System.Windows.Forms.Button()
+        Me.AmF_AwFav_LrgTotal = New System.Windows.Forms.Button()
+        Me.AmF_LrgHmFav_RegTot = New System.Windows.Forms.Button()
         Me.AmF_LrgAwFav_RegTot = New System.Windows.Forms.Button()
         Me.AmF_HmFav_RegTot = New System.Windows.Forms.Button()
         Me.AmF_AwFav_RegTot = New System.Windows.Forms.Button()
-        Me.AmF_LrgHmFav_RegTot = New System.Windows.Forms.Button()
-        Me.AmF_AwFav_LrgTotal = New System.Windows.Forms.Button()
-        Me.AmF_HmFav_LrgTot = New System.Windows.Forms.Button()
-        Me.AmF_LrgAwFav_LrgTot = New System.Windows.Forms.Button()
-        Me.AmF_LrgHmFav_LrgTot = New System.Windows.Forms.Button()
         Me.Soccer_Panel.SuspendLayout()
         Me.Basketball_Panel.SuspendLayout()
         Me.Tennis_Panel.SuspendLayout()
@@ -542,6 +542,51 @@ Partial Class MainPage
         Me.American_Football_Panel.TabIndex = 5
         Me.American_Football_Panel.Visible = False
         '
+        'AmF_LrgHmFav_LrgTot
+        '
+        Me.AmF_LrgHmFav_LrgTot.Location = New System.Drawing.Point(236, 254)
+        Me.AmF_LrgHmFav_LrgTot.Name = "AmF_LrgHmFav_LrgTot"
+        Me.AmF_LrgHmFav_LrgTot.Size = New System.Drawing.Size(107, 39)
+        Me.AmF_LrgHmFav_LrgTot.TabIndex = 7
+        Me.AmF_LrgHmFav_LrgTot.Text = "Large Home Fav / Large Total"
+        Me.AmF_LrgHmFav_LrgTot.UseVisualStyleBackColor = True
+        '
+        'AmF_LrgAwFav_LrgTot
+        '
+        Me.AmF_LrgAwFav_LrgTot.Location = New System.Drawing.Point(68, 254)
+        Me.AmF_LrgAwFav_LrgTot.Name = "AmF_LrgAwFav_LrgTot"
+        Me.AmF_LrgAwFav_LrgTot.Size = New System.Drawing.Size(104, 39)
+        Me.AmF_LrgAwFav_LrgTot.TabIndex = 6
+        Me.AmF_LrgAwFav_LrgTot.Text = "Large Away Fav / Large Total"
+        Me.AmF_LrgAwFav_LrgTot.UseVisualStyleBackColor = True
+        '
+        'AmF_HmFav_LrgTot
+        '
+        Me.AmF_HmFav_LrgTot.Location = New System.Drawing.Point(236, 186)
+        Me.AmF_HmFav_LrgTot.Name = "AmF_HmFav_LrgTot"
+        Me.AmF_HmFav_LrgTot.Size = New System.Drawing.Size(107, 43)
+        Me.AmF_HmFav_LrgTot.TabIndex = 5
+        Me.AmF_HmFav_LrgTot.Text = "Home Fav / Large Total"
+        Me.AmF_HmFav_LrgTot.UseVisualStyleBackColor = True
+        '
+        'AmF_AwFav_LrgTotal
+        '
+        Me.AmF_AwFav_LrgTotal.Location = New System.Drawing.Point(68, 190)
+        Me.AmF_AwFav_LrgTotal.Name = "AmF_AwFav_LrgTotal"
+        Me.AmF_AwFav_LrgTotal.Size = New System.Drawing.Size(104, 39)
+        Me.AmF_AwFav_LrgTotal.TabIndex = 4
+        Me.AmF_AwFav_LrgTotal.Text = "Away Fav / Large Total"
+        Me.AmF_AwFav_LrgTotal.UseVisualStyleBackColor = True
+        '
+        'AmF_LrgHmFav_RegTot
+        '
+        Me.AmF_LrgHmFav_RegTot.Location = New System.Drawing.Point(236, 100)
+        Me.AmF_LrgHmFav_RegTot.Name = "AmF_LrgHmFav_RegTot"
+        Me.AmF_LrgHmFav_RegTot.Size = New System.Drawing.Size(107, 51)
+        Me.AmF_LrgHmFav_RegTot.TabIndex = 3
+        Me.AmF_LrgHmFav_RegTot.Text = "Large Home Fav / Regular Total"
+        Me.AmF_LrgHmFav_RegTot.UseVisualStyleBackColor = True
+        '
         'AmF_LrgAwFav_RegTot
         '
         Me.AmF_LrgAwFav_RegTot.Location = New System.Drawing.Point(68, 104)
@@ -569,51 +614,6 @@ Partial Class MainPage
         Me.AmF_AwFav_RegTot.Text = "Away Fav / Normal Total"
         Me.AmF_AwFav_RegTot.UseVisualStyleBackColor = True
         '
-        'AmF_LrgHmFav_RegTot
-        '
-        Me.AmF_LrgHmFav_RegTot.Location = New System.Drawing.Point(236, 100)
-        Me.AmF_LrgHmFav_RegTot.Name = "AmF_LrgHmFav_RegTot"
-        Me.AmF_LrgHmFav_RegTot.Size = New System.Drawing.Size(107, 51)
-        Me.AmF_LrgHmFav_RegTot.TabIndex = 3
-        Me.AmF_LrgHmFav_RegTot.Text = "Large Home Fav / Regular Total"
-        Me.AmF_LrgHmFav_RegTot.UseVisualStyleBackColor = True
-        '
-        'AmF_AwFav_LrgTotal
-        '
-        Me.AmF_AwFav_LrgTotal.Location = New System.Drawing.Point(68, 190)
-        Me.AmF_AwFav_LrgTotal.Name = "AmF_AwFav_LrgTotal"
-        Me.AmF_AwFav_LrgTotal.Size = New System.Drawing.Size(104, 39)
-        Me.AmF_AwFav_LrgTotal.TabIndex = 4
-        Me.AmF_AwFav_LrgTotal.Text = "Away Fav / Large Total"
-        Me.AmF_AwFav_LrgTotal.UseVisualStyleBackColor = True
-        '
-        'AmF_HmFav_LrgTot
-        '
-        Me.AmF_HmFav_LrgTot.Location = New System.Drawing.Point(236, 186)
-        Me.AmF_HmFav_LrgTot.Name = "AmF_HmFav_LrgTot"
-        Me.AmF_HmFav_LrgTot.Size = New System.Drawing.Size(107, 43)
-        Me.AmF_HmFav_LrgTot.TabIndex = 5
-        Me.AmF_HmFav_LrgTot.Text = "Home Fav / Large Total"
-        Me.AmF_HmFav_LrgTot.UseVisualStyleBackColor = True
-        '
-        'AmF_LrgAwFav_LrgTot
-        '
-        Me.AmF_LrgAwFav_LrgTot.Location = New System.Drawing.Point(68, 254)
-        Me.AmF_LrgAwFav_LrgTot.Name = "AmF_LrgAwFav_LrgTot"
-        Me.AmF_LrgAwFav_LrgTot.Size = New System.Drawing.Size(104, 39)
-        Me.AmF_LrgAwFav_LrgTot.TabIndex = 6
-        Me.AmF_LrgAwFav_LrgTot.Text = "Large Away Fav / Large Total"
-        Me.AmF_LrgAwFav_LrgTot.UseVisualStyleBackColor = True
-        '
-        'AmF_LrgHmFav_LrgTot
-        '
-        Me.AmF_LrgHmFav_LrgTot.Location = New System.Drawing.Point(236, 254)
-        Me.AmF_LrgHmFav_LrgTot.Name = "AmF_LrgHmFav_LrgTot"
-        Me.AmF_LrgHmFav_LrgTot.Size = New System.Drawing.Size(107, 39)
-        Me.AmF_LrgHmFav_LrgTot.TabIndex = 7
-        Me.AmF_LrgHmFav_LrgTot.Text = "Large Home Fav / Large Total"
-        Me.AmF_LrgHmFav_LrgTot.UseVisualStyleBackColor = True
-        '
         'MainPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -622,10 +622,10 @@ Partial Class MainPage
         Me.ClientSize = New System.Drawing.Size(542, 461)
         Me.Controls.Add(Me.LblSportSelect)
         Me.Controls.Add(Me.SportSelectBox)
-        Me.Controls.Add(Me.Basketball_Panel)
         Me.Controls.Add(Me.American_Football_Panel)
         Me.Controls.Add(Me.Tennis_Panel)
         Me.Controls.Add(Me.Soccer_Panel)
+        Me.Controls.Add(Me.Basketball_Panel)
         Me.Name = "MainPage"
         Me.Text = "Default Lines"
         Me.Soccer_Panel.ResumeLayout(False)
